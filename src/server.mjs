@@ -1,8 +1,8 @@
 import express from 'express';
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 import { authenticateRechargeToken } from './middlewares/authentication.mjs';
 
-config();
+dotenv.config();
 
 const app = express();
 const PORT = 3000;
